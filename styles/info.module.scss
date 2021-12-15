@@ -1,0 +1,29 @@
+@import './fonts.scss';
+@import "./colors.scss";
+.info {
+  display: flex;
+  align-items: center;
+  font-size: 1.3rem;
+  padding: 10px;
+  font-family: "Lato", sans-serif;
+  line-height: 1.9rem;
+  color: rgba(0, 0, 0, .5);
+  transition: all 0.3s linear;
+
+  h3 {
+    font-size: 2rem;
+    font-family: "Lato Bold", sans-serif;
+    color: rgba(0, 0, 0, .7);
+  }
+  hr {
+    margin: 8px 0px;
+    width: 50%;
+    height: 6px;
+    border-radius: 100px;
+    border: none;
+    background-color: $primary;
+  }
+  .img {
+    border-radius: 100%;
+  }
+}
