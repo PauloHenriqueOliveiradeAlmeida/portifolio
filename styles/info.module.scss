@@ -2,28 +2,38 @@
 @import "./colors.scss";
 .info {
   display: flex;
+  flex-direction: row;
   align-items: center;
   font-size: 1.3rem;
-  padding: 10px;
+  padding: 2vw;
   font-family: "Lato", sans-serif;
   line-height: 1.9rem;
-  color: rgba(0, 0, 0, .5);
+  color: $text;
   transition: all 0.3s linear;
+  text-align: right;
+  gap: 7px;
 
   h3 {
     font-size: 2rem;
     font-family: "Lato Bold", sans-serif;
-    color: rgba(0, 0, 0, .7);
+    color: $text-title;
+    text-align: left;
   }
   hr {
     margin: 8px 0px;
-    width: 50%;
-    height: 6px;
+    max-width: 50%;
+    min-width: 30%;
+    height: 4px;
     border-radius: 100px;
     border: none;
     background-color: $primary;
   }
-  .img {
-    border-radius: 100%;
+  figure {
+    display: block;
+    min-width: 45%;
+
+    .img {
+      border-radius: 100%;
+    }
   }
 }

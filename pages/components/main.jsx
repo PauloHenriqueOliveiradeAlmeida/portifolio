@@ -8,14 +8,14 @@ function Main(props) {
         <h2 className={styles.h2}>Olá, sou</h2>
         <Typewriter options={{
             strings: [
-              "Paulo.", "Estu-<br>dante.", "Front-End Dev."
+              "Paulo.", "Estudante.", "Front-End Dev."
             ],
             autoStart: true,
             loop: true
           }}/>
       </div>
       <figure>
-        <Image src={props.image} className={props.visible, styles.img} layout="fixed" width="170px" height="150px"/>
+        <Image src={props.image} className={props.visible, styles.img} layout="responsive" width="170px" height="150px"/>
       </figure>
     </main>
   );
